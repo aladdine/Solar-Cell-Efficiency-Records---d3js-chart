@@ -9,8 +9,7 @@
 
 <body>
 <!-- DOM elements go here -->
-<script  type="text/javascript" src="solar_cell_data.js"></script>
-<!-- PLEASE NOTE THAT DATA IS NOT UP TO DATE YET. I AM READING THROUGH ACADEMIC REFERENCES TO PUT THE PAPER IN JSON FORMAT. IT SHOULD BE READY IN THE NEXT 24 HOURS -->
+<script  type="text/javascript" src="pv_data.js"></script>
 <h1>Solar Cell Efficiency Records Since 1975</h1>
 <script>
 var w = 1000;
@@ -140,10 +139,11 @@ function plot(params){
 		var g = self.selectAll("g."+solar_cell);
 		var arr = params.data.map(function(d){
 			return {
-				key: solar_cell,
+				key: solar_cell.replace("_"," "),
 				value: d[solar_cell],
 				year: d.year,
-				efficiency: d.efficiency
+				efficiency: d.efficiency,
+				lab: d.lab
 			};
 		});
 		//enter()
@@ -162,10 +162,10 @@ function plot(params){
 				return y(d.value);
 			})
 			.on("mouseover", function(d,i){
-				var str = d.key + " solar cell: ";
-				str += "Year: " + d.year + " ";
-				str += "Efficiency: " + d.efficiency + " ";
-				str += "Average Rating: " + d.value;
+				var str = "Technology: " + d.key + " | ";
+				str += "Year: " + d.year + " | ";
+				str += "Lab: " + d.lab + " | ";
+				str += "Efficiency: " + d.value + "%";
 				d3.select(".chart-header").text(str);
 			})
 			.on("mouseout", function(d,i){
