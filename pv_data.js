@@ -1,5 +1,5 @@
 var data = [
-	{multijunction: 30, Crystalline_Si: 16, Thin_Film: 10, Emerging_PV: 3, year: 1975, lab: "NREL"},
+/*	{multijunction: 30, Crystalline_Si: 16, Thin_Film: 10, Emerging_PV: 3, year: 1975, lab: "NREL"},
 	{multijunction: 30, Crystalline_Si: 16, Thin_Film: 10, Emerging_PV: 3, year: 1976, lab: "NREL"},
 	{multijunction: 30, Crystalline_Si: 16, Thin_Film: 10, Emerging_PV: 3, year: 1977, lab: "NREL"},
 	{multijunction: 30, Crystalline_Si: 16, Thin_Film: 10, Emerging_PV: 3, year: 1978, lab: "NREL"},
@@ -37,7 +37,8 @@ var data = [
 	{multijunction: 30, Crystalline_Si: 16, Thin_Film: 10, Emerging_PV: 3, year: 2010, lab: "NREL"},
 	{multijunction: 30, Crystalline_Si: 16, Thin_Film: 10, Emerging_PV: 3, year: 2011, lab: "NREL"},
 	{multijunction: 30, Crystalline_Si: 16, Thin_Film: 10, Emerging_PV: 3, year: 2012, lab: "NREL"},
-	{multijunction: 37.9, Crystalline_Si: 25.6, "III-V": 28.8, Thin_Film: 21.0, "a-Si": 11.4, Organic: 11.9, year: 2015, lab: "NREL"},
-	{multijunction: 37.9, Crystalline_Si: 25.6, "III-V": 28.8, Thin_Film: 21.0, "a-Si": 11.4, Organic: 11.9, year: 2015, lab: "NREL"}
+	{multijunction: 30, Crystalline_Si: 16, Thin_Film: 10, Emerging_PV: 3, year: 2013, lab: "NREL"},
+	{multijunction: 30, Crystalline_Si: 16, Thin_Film: 10, Emerging_PV: 3, year: 2014, lab: "NREL"}, 
+	{multijunction: 30, Crystalline_Si: 16, Thin_Film: 10, Emerging_PV: 3, year: 2015, lab: "NREL"} */
+	{Si (crystalline): 30, Si (multicrystalline): 16, Si (thin transfer submodule): 10, Si (thin film minimodule): 3, year: 2015, lab: "NREL"}
 ]; 
-
