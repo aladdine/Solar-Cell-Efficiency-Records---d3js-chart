@@ -37,7 +37,7 @@ var data = [
 	{multijunction: 30, Crystalline_Si: 16, Thin_Film: 10, Emerging_PV: 3, year: 2010, lab: "NREL"},
 	{multijunction: 30, Crystalline_Si: 16, Thin_Film: 10, Emerging_PV: 3, year: 2011, lab: "NREL"},
 	{multijunction: 30, Crystalline_Si: 16, Thin_Film: 10, Emerging_PV: 3, year: 2012, lab: "NREL"},
-	{multijunction: 37.9, Crystalline_Si: 25.6, "III-V": 28.8, Thin_Film: 21.0, "a-Si": 11.4, Organic: 11.9, year: 2015, lab: "NREL"},
+	{multijunction: 37.9, Crystalline_Si: 25.6, "III-V": 28.8, Thin_Film: 20.5, "a-Si": 11.0, Organic: 10.7, DSSC: 29.9, year: 2014, lab: "NREL"},
 	{multijunction: 37.9, Crystalline_Si: 25.6, "III-V": 28.8, Thin_Film: 21.0, "a-Si": 11.4, Organic: 11.9, year: 2015, lab: "NREL"}
 ]; 
 
