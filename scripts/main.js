@@ -100,7 +100,7 @@ function plot(params){
 	drawAxis.call(this, params);
 	var self = this;
 	var solar_cells = d3.keys(params.data[0]).filter(function(d){
-		return d !== "year" && d !== "lab";
+		return d !== "year" && d !== "ref";
 	});
 	
 	//enter() for <g>
@@ -137,7 +137,7 @@ function plot(params){
 				value: d[solar_cell],
 				year: d.year,
 				efficiency: d.efficiency,
-				lab: d.lab
+				ref: d.ref
 			};
 		});
 		//enter()
@@ -158,7 +158,7 @@ function plot(params){
 			.on("mouseover", function(d,i){
 				var str = "Technology: " + d.key + " | ";
 				str += "Year: " + d.year + " | ";
-				str += "Lab: " + d.lab + " | ";
+				str += "Ref: " + d.ref + " | ";
 				str += "Efficiency: " + d.value + "%";
 				d3.select(".chart-header").text(str);
 			})
